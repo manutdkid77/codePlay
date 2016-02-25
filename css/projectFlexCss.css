@@ -1,0 +1,87 @@
+body{
+	box-sizing:border-box;
+	margin: 0;
+	padding:0;
+}
+
+#topBar{
+	       border: 1px solid #666666;
+    border-bottom: none;
+	width: 100%;
+	 display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  background-color: tomato;
+}
+
+#logo{
+	    position: relative;
+    left: 10px;
+}
+
+#toggles li{
+	list-style-type: none;
+	border:1px  solid #666666;
+	float:left;
+	padding: 5px;
+}
+#topBar button{
+	 position: relative;
+    right: 16px;
+    top: 17px;
+    width: 61px;
+    height: 26px;
+    border-radius: 4px;
+}
+.html{
+border-top-left-radius:3px;
+border-bottom-left-radius:3px;
+}
+.res{
+border-top-right-radius:3px;
+border-bottom-right-radius:3px;
+}
+.selected{
+	background-color: #999999;
+}
+
+#codeBody{
+	
+}
+.codeContent{
+	width:50%;
+	position: relative;
+	float: left;
+}
+.codeContent textarea{
+	resize: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	padding: 7px;
+	font-size: 1.0em;
+}
+.codeContent label{
+	    position: absolute;
+    right: 11px;
+    top: 10px;
+    border: 1px solid grey;
+    font-family: segoe ui;
+    padding: 3px;
+}
+.codeContent iframe{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border: none;
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+
+}
+#JSContent,#CSSContent{
+	display: none;
+}
