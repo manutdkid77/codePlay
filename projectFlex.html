@@ -1,17 +1,17 @@
 <head>
-<title>jQuery Flex Project</title>
+<title>codePlay</title>
 <meta charset="utf-8" />
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css" href="css/projectFlexCss.css">
+<script type="text/javascript" src="jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="projectFlexCss.css">
 
 </head>
 	<body>
 	 	<div id="container">
 	 		<div id="topBar">
 	 			<div id="logo">
-	 				<h3>CodePlayer</h3>
+	 				<h3>CodePlay</h3>
 	 			</div>
 	 			<div id="toggles">
 	 				<ul>
@@ -72,7 +72,7 @@
 				$("#submit").click(function(){
 						$("iframe").contents().find("html").html('<style>'+$("#CSSCode").val()+'</style>'+$("#HTMLCode").val());
 
-						document.getElementById("iframe").contentWindow.eval($("#JSCode").val());
+						document.getElementById("resFrame").contentWindow.eval($("#JSCode").val());
 						
 					});
 			</script>
